@@ -1,0 +1,163 @@
+@import 'vendor/normalize', 'vendor/animate';
+
+
+/* ==== Main CSS ==== */
+$color-primary: #6375E4;
+$color-primary-dark: #2A2929;
+$color-light: #fff;
+
+body  {
+	background-color: $color-primary;
+	color: $color-primary-dark;
+	font-family: "brandon-grotesque",sans-serif;
+}
+
+a {
+	border-bottom: 1px solid $color-primary-dark;
+	color: $color-primary-dark;
+	text-decoration: none;
+	transition: all 500ms ease-in-out;
+	pointer-events: visible;
+
+	&:hover {
+		border-bottom: 4px solid rgba(55, 54, 54, 1);
+		color: rgba(55, 54, 54, 1);
+	}
+}
+
+.backdrop {
+  	position:fixed; 
+  	top:0;
+  	bottom:0;
+  	left:0;
+  	right:0; 
+  	z-index: -1;
+
+ 	&__overlay {
+  		position: absolute;
+  		height: 100%;
+  		width: 100%;
+		background: linear-gradient(to bottom right, $color-primary, rgba($color-primary, .95), rgba($color-primary, .75), rgba(55, 54, 54, 0.34));
+		z-index: 2;
+		pointer-events: none;
+
+		@media (max-width: 400px) {
+			background: linear-gradient(to bottom right, $color-primary, $color-primary, rgba($color-primary, .75), rgba(55, 54, 54, 0.34));
+		}
+  }
+}
+
+.self {
+	position: fixed;
+	display: inline-block;
+  	min-width: 320px;
+	margin: 0;
+	padding: 50px;
+	z-index: 1;
+	pointer-events: none;
+
+	@media (max-width: 400px) {
+		min-width: inherit;
+		padding: 20px;
+	}
+
+	&__name {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0;
+		border-bottom: 10px solid $color-primary-dark;
+		color: $color-primary-dark;
+		font-weight: bold;
+		font-size: 52px;
+		text-transform: uppercase;
+
+		@media (max-width: 400px) {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			font-size: 42px;
+		}
+	}
+
+	&__about {		
+		margin: 20px 0 0;
+		color: $color-primary-dark;
+		font-size: 14px;
+		font-weight: normal;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+
+		@media (max-width: 400px) {
+			background-color: transparent;
+		}
+	}
+
+	&__attributes {
+		padding: 0;
+		list-style: none;
+
+		li {
+			margin-top: 10px;
+			padding-left: 26px;
+			
+			@media (max-width: 400px) {
+				margin-top: 5px;
+				margin-bottom: 5px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+
+			svg {
+				margin-left: -28px;
+				height: 12px;
+			}
+		}
+	}
+
+	&__social {
+	  	margin-top: 50px;
+	  	margin-bottom: 0;
+	  	padding-top: 10px;
+	  	border-top: 1px solid rgba(197, 199, 208, 0.3);
+	  	color: rgba(197, 199, 208, .7);
+	  	font-size: 12px;
+	  	font-weight: bold;
+	  	text-transform: uppercase;
+	  	letter-spacing: 3px;
+
+	  	a  {
+	  		border-color: rgba(197, 199, 208, .8);
+	  		color: rgba(197, 199, 208, .8);
+	  		font-weight: normal;
+	  	}
+	}
+}
+
+/* Tilt Effect Styling - Credit to Codrops */
+.tilt {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.tilt__back,
+.tilt__front {
+	width: 100%;
+	height: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tilt__back {
+	position: relative;
+}
+
+.tilt__front {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
