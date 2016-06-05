@@ -122,8 +122,12 @@ a {
     align-items: center;
     justify-content: center;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01), rgba(230, 230, 230, 0.17), rgba(255, 255, 255, 0.35), white);
-    border: 20px solid $color-primary-dark;
+    border: 5px solid $color-primary-dark;
     pointer-events: none;
+
+    @include bp(min-width, $bp-medium + 1) {
+      border-width: 20px;
+    }
 
     &:before {
       content: '';
@@ -257,6 +261,11 @@ a {
 
     .site {
       position: relative;
+      margin-top: 50px;
+
+      @include bp(min-width, $bp-medium + 1) {
+        margin-top: 0;
+      }
 
       @include hover {
         .site__date,
