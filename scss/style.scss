@@ -122,7 +122,6 @@ a {
     align-items: center;
     justify-content: center;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.01), rgba(230, 230, 230, 0.17), rgba(255, 255, 255, 0.35), white);
-    border: 5px solid $color-primary-dark;
     pointer-events: none;
 
     @include bp(min-width, $bp-medium + 1) {
@@ -304,6 +303,15 @@ a {
         font-weight: normal;
         color: #999;
         border-bottom: 1px solid currentColor;
+
+        a {
+          transition: all .2 ease;
+
+          @include hover {
+            padding-right: 20px;
+            border-bottom-width: 1px;
+          }
+        }
       }
 
       &__date {
