@@ -258,6 +258,10 @@ a {
       }
     }
 
+    .sites--current {
+      margin-bottom: 150px;
+    }
+
     .site {
       position: relative;
       margin-top: 50px;
@@ -322,6 +326,10 @@ a {
         font-size: 48px;
         color: $color-primary-dark;
         z-index: 1;
+
+        &--current {
+          left: -90px;
+        }
       }
 
       &__tags {
