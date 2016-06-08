@@ -208,11 +208,13 @@ a {
       color: white;
 
       @include bp(min-width, $bp-medium + 1) {
-        font-size: 8vh;
+        font-size: 38px;
       }
 
       li {
         display: inline;
+				padding-left: 8px;
+				padding-right: 8px;
         word-break: break-all;
       }
     }
@@ -220,7 +222,7 @@ a {
 
   &__projects {
     position: relative;
-    padding: 50px 40px;
+    padding: 50px 10px 50px 40px;
     background-color: white;
 
     @include bp(min-width, $bp-medium + 1) {
@@ -289,24 +291,49 @@ a {
         @include hover {
           box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.15);
         }
+
+				p {
+					margin-left: 25px;
+
+					span {
+						padding-right: 5px;
+						font-size: 12px;
+						letter-spacing: 1px;
+						text-transform: uppercase;
+					}
+
+					a {
+						color: currentColor;
+						border-bottom-color: currentColor;
+					}
+				}
       }
 
       &__title {
-        display: inline-block;
-        margin: 0;
-        padding: 25px;
-        font-size: 16px;
-        color: currentColor;
-        text-transform: uppercase;
+				display: inline-block;
+				margin: 0;
+				margin-left: 25px;
+				padding: 15px;
+				font-size: 16px;
+				text-transform: uppercase;
+				color: currentColor;
+				border-left: 2px solid currentColor;
+				border-bottom: 2px solid currentColor;
+				box-shadow: -4px 5px 0px currentColor;
       }
 
       &__url {
         position: relative;
-        margin-left: 10px;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: normal;
         color: #999;
         border-bottom: 1px solid currentColor;
+				word-break: break-word;
+				line-height: 1.33;
+
+				@include bp(min-width, $bp-medium + 1) {
+					margin-left: 10px;
+				}
 
         a {
           transition: all .2 ease;
@@ -333,6 +360,7 @@ a {
       }
 
       &__tags {
+				margin-top: 15px;
         padding-left: 43px;
         list-style: disc;
 
@@ -380,6 +408,12 @@ a {
       padding-top: 50px;
       padding-bottom: 50px;
     }
+
+		h2 {
+			font-size: 22px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
 
     > ul {
       display: flex;
@@ -431,7 +465,7 @@ a {
         > span {
           padding-left: 50px;
           padding-bottom: 5px;
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 300;
           text-align: left;
           text-transform: uppercase;
