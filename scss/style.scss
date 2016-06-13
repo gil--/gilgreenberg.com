@@ -287,9 +287,10 @@ a {
         background-color: white;
         border: 2px solid currentColor;
         z-index: 2;
+				transition: all .2s ease-in-out;
 
         @include hover {
-          box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 0 5px white, 0 0 0 10px currentColor;
         }
 
 				p {
