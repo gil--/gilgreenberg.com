@@ -12,7 +12,7 @@ const IndexPage = () => (
     <p>Hey! I'm a Front End Developer in NYC working @ <a href="//somethingdigital.com" target="_blank">SomethingDigital</a>.</p>
     <p>I mostly work with Shopify, React, Graphql, and Gatsbyjs.
     <br />Recently, I've been experimenting heavily with Shopify APIs and you can see a number of the proof-of-concepts open sourced below.</p>
-    <p>In NYC? Reach out on social media and I'd be happy to grab a coffee:</p>
+    <p>In NYC? Reach out on social media and I'd be happy to grab a coffee (I respond best on Twitter).</p>
     <h2>Find me on...</h2>
     <ul>
       <li><a href="//www.twitter.com/gilgnyc" target="_blank">Twitter</a></li>
