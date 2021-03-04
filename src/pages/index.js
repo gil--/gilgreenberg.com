@@ -9,9 +9,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Gil Greenberg</h1>
-    <p>Hey! I'm a Front End Developer in NYC working @ <a href="//somethingdigital.com" target="_blank">SomethingDigital</a>.</p>
+    <p>Hey! I'm a Front End Technical Lead in NYC working @ <a href="//rightpoint.com" target="_blank">Rightpoint</a>.</p>
     <p>I mostly work with Shopify, React, Graphql, and Gatsbyjs.
-    <br />Recently, I've been experimenting heavily with Shopify APIs and you can see a number of the proof-of-concepts open sourced below.</p>
+    <br />Recently, I've been building a Shopify app called <a href="https://apps.shopify.com/post-purchase-promotions">Post Purchase Promotions</a> on the side.</p>
+    <br />
     <p>In NYC? Reach out on social media and I'd be happy to grab a coffee (I respond best on Twitter).</p>
     <h2>Find me on...</h2>
     <ul>
