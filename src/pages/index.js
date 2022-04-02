@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Gil Greenberg</h1>
-    <p>Hey! I'm based in NYC and work full-time on <a href="https://upsells.net" target="_blank">Checkout Promotions</a>, a Shopify app to grow customer life time value through the use of promotional offers during checkout.</p>
+    <p>Hey! I'm based in NYC and work full-time on <a href="https://www.checkoutpromotions.com" target="_blank">Checkout Promotions</a>, a Shopify app to grow customer life time value through the use of promotional offers during checkout.</p>
     <p>Previously, I was a Front End Technical Lead at <a href="//rightpoint.com" target="_blank">Rightpoint</a>.</p>
     <br />
     <p>In NYC? Reach out on social media and I'd be happy to grab a coffee (I respond best on Twitter).</p>
