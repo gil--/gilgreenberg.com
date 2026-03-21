@@ -8,7 +8,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Gil Greenberg</h1>
-    <p>Hey! I'm based in NYC and work at Shopify as a Product lead. Previously I was the founder of <a href="https://apps.shopify.com/checkout-blocks" target="_blank">Checkout Blocks</a>, a Shopify Plus app to customize checkout. It was acquired by Shopify in June 2024.</p>
+    <p>Hey! I'm based in NYC and work at Shopify as a Product lead.</p>
+    <p>Previously I was the founder of <a href="https://apps.shopify.com/checkout-blocks" target="_blank">Checkout Blocks</a>, a Shopify Plus app to customize checkout. It was acquired by Shopify in June 2024.</p>
+    <br />  
     <p>Before that, I was a Front End Technical Lead at <a href="//rightpoint.com" target="_blank">Rightpoint</a> where I led their Shopify Plus practice.</p>
     <br />
     <p>In NYC? Reach out on social media and I'd be happy to grab a coffee (I respond best on Twitter).</p>
